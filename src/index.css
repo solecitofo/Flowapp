@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS - Colores Figma */
+:root {
+  /* Gradiente Welcome */
+  --color-gradient-from: #D2B48C;  /* stone-300 */
+  --color-gradient-to: #BAE6FD;    /* sky-200 */
+  
+  /* Textos */
+  --color-title: #1E293B;          /* slate-900 */
+  --color-subtitle: #3F3F46;       /* slate-700 */
+  
+  /* Botón */
+  --color-button: #0E7490;         /* cyan-700 */
+  --color-button-hover: #0E5B7B;   /* cyan-800 */
+  
+  /* Blancos */
+  --color-button-text: #FFFFFF;
+}
+
+/* Slider custom styles */
+.slider-thumb::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #88AB8E;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.slider-thumb::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.slider-thumb::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #88AB8E;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Transiciones suaves globales */
+* {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mejoras de accesibilidad */
+:focus-visible {
+  outline: 2px solid #88AB8E;
+  outline-offset: 2px;
+}
+
+/* Estilos de texto Figma - Reutilizables */
+.text-welcome-title {
+  @apply text-slate-900 text-3xl font-semibold font-poppins;
+}
+
+.text-welcome-subtitle {
+  @apply text-slate-700 text-base font-normal font-poppins;
+}
+
+.text-welcome-button {
+  @apply text-white text-xl font-semibold font-poppins;
+}
