@@ -1,14 +1,10 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-=======
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
->>>>>>> 4d59d2a16b7324ee1d8b7b114d2574b2193e2677
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
 /* Variables CSS - Colores Figma */
 :root {
   /* Gradiente Welcome */
@@ -28,40 +24,6 @@
 }
 
 /* Slider custom styles */
-=======
-/* Slider custom styles */
-.slider-thumb::-webkit-slider-thumb {
-  appearance: none;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: #88AB8E;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.slider-thumb::-moz-range-thumb {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: #88AB8E;
-  cursor: pointer;
-  border: none;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Smooth transitions */
-* {
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-/* Font import */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-/* Estilos para el slider de mood tracking */
->>>>>>> 4d59d2a16b7324ee1d8b7b114d2574b2193e2677
 .slider-thumb::-webkit-slider-thumb {
   appearance: none;
   width: 24px;
@@ -103,7 +65,6 @@ html {
 :focus-visible {
   outline: 2px solid #88AB8E;
   outline-offset: 2px;
-<<<<<<< HEAD
 }
 
 /* Estilos de texto Figma - Reutilizables */
@@ -117,6 +78,4 @@ html {
 
 .text-welcome-button {
   @apply text-white text-xl font-semibold font-poppins;
-=======
->>>>>>> 4d59d2a16b7324ee1d8b7b114d2574b2193e2677
 }

@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-import { Welcome } from './components/onboarding/Welcome';
-
-function App() {
-  return <Welcome onNext={() => alert('¡Siguiente pantalla!')} />;
-}
-
-export default App;
-
-=======
 import { useEffect } from 'react';
 import { useAppStore } from '@/store/appStore';
+import { OnboardingFlow } from './components/onboarding/OnboardingFlow';
 
 function App() {
   const { isLoading, isOnboarded, checkOnboarding } = useAppStore();
@@ -27,6 +18,11 @@ function App() {
     );
   }
 
+  // Mostrar onboarding si no está completado
+  if (!isOnboarded) {
+    return <OnboardingFlow onComplete={() => checkOnboarding()} />;
+  }
+
   return (
     <div className="flex flex-col items-center justify-center h-screen text-flow-charcoal">
       <h1 className="text-4xl font-bold">🌊 Flow</h1>
@@ -34,9 +30,7 @@ function App() {
 
       <div className="mt-6 space-y-2 text-center">
         <p className="font-medium">
-          {isOnboarded
-            ? '✅ Setup completo - Onboarding ya completado'
-            : '⚙️ Setup completo - Listo para desarrollar onboarding'}
+          ✅ Setup completo - Onboarding ya completado
         </p>
 
         <p>✅ React + TypeScript + Vite</p>
@@ -50,4 +44,3 @@ function App() {
 }
 
 export default App;
->>>>>>> 4d59d2a16b7324ee1d8b7b114d2574b2193e2677
