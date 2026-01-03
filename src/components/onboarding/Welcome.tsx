@@ -43,8 +43,8 @@ export const Welcome: React.FC<WelcomeProps> = ({ onNext }) => {
           textTransform: 'uppercase',
           marginBottom: '2rem',
           fontFamily: 'Poppins, sans-serif'
-        }}>
-          Diseñado con amor para mentes inquietas
+        }}>Diseñado con amor para mentes inquietas.
+          
         </p>
         
         {/* Title */}
@@ -55,7 +55,6 @@ export const Welcome: React.FC<WelcomeProps> = ({ onNext }) => {
           marginBottom: '1rem',
           fontFamily: 'Poppins, sans-serif'
         }}>
-          Bienvenido a Flow
         </h1>
         
         {/* Subtitle */}
@@ -65,9 +64,8 @@ export const Welcome: React.FC<WelcomeProps> = ({ onNext }) => {
           lineHeight: 1.6,
           fontFamily: 'Poppins, sans-serif'
         }}>
-          Organiza tus ideas con claridad.
-          <br />
-          Fluye sin fricción
+             
+                  Siempre a tu lado, siemprea tu ritmo        <br />
         </p>
       </div>
       
